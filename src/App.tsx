@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ValueProps from "./components/ValueProps";
 import Capabilities from "./components/Capabilities";
+import DiagnosticTool from "./components/DiagnosticTool";
 import Upskill from "./components/Upskill";
 import Logos from "./components/Logos";
 import ContactForm from "./components/ContactForm";
@@ -28,6 +29,9 @@ export default function App() {
 
         {/* The Core Ecosystem Capabilities */}
         <Capabilities />
+
+        {/* Systems Audit Diagnostic Tool */}
+        <DiagnosticTool onOpenBooking={() => setIsBookingOpen(true)} />
 
         {/* Capacity Building / Upskilling with code simulator */}
         <Upskill />

@@ -45,6 +45,21 @@ export default function BookingModal({ isOpen, onClose }: BookingModalProps) {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  React.useEffect(() => {
+    if (isOpen) {
+      const prefillNotes = localStorage.getItem("emerald_diagnostic_prefill_notes");
+      const prefillService = localStorage.getItem("emerald_diagnostic_prefill_service");
+      if (prefillNotes) {
+        setForm((prev) => ({ ...prev, notes: prefillNotes }));
+        localStorage.removeItem("emerald_diagnostic_prefill_notes");
+      }
+      if (prefillService) {
+        setSelectedService(prefillService);
+        localStorage.removeItem("emerald_diagnostic_prefill_service");
+      }
+    }
+  }, [isOpen]);
+
   const handleNext = () => setStep((prev) => prev + 1);
   const handlePrev = () => setStep((prev) => prev - 1);
 
