@@ -1,0 +1,6 @@
+{
+  "name": "Emerald Codelines",
+  "description": "Precision software and systems engineering for mission-critical industries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
