@@ -23,53 +23,53 @@ export interface TrainingModule {
 export const CAPABILITIES: Capability[] = [
   {
     id: "software",
-    title: "Custom Software Development",
+    title: "Custom Software & Mobile App Development",
     category: "SOFTWARE",
-    description: "Scalable cloud-native architectures designed for high-throughput performance and uncompromising security.",
-    details: "We build tailored software architectures using high-integrity languages such as Rust, Go, and Python. Our services span from ultra-efficient microservices to highly resilient decentralized stream pipelines capable of processing millions of transactions per second under strict SLA constraints.",
+    description: "Scalable cloud-native architectures and premium mobile app solutions engineered for high performance.",
+    details: "We build tailored software architectures using high-integrity languages such as Rust, Go, and Python, alongside native and cross-platform mobile apps (React Native, Flutter). Our services span from ultra-efficient microservices to highly resilient decentralized stream pipelines and fluid, premium user interfaces that run seamlessly across Android, iOS, and Web environments.",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
     seoAlt: "Precision Custom Software Development workspace showing modern IDE with high-integrity Rust and Python source code structures on an ultrawide screen.",
-    seoTitle: "Emerald Codelines Custom Software Engineering & Cloud-Native Architectures",
-    bullets: ["Microservices Architecture", "Real-time Data Pipelines"],
+    seoTitle: "Emerald Codelines Custom Software Engineering & Mobile App Development",
+    bullets: ["Cloud & Microservices", "iOS & Android Mobile Apps"],
     features: [
       "Distributed consensus engines & Raft-based systems",
+      "Native & cross-platform mobile solutions (React Native, Flutter) with offline sync",
       "Asynchronous high-throughput message brokers (Kafka/Redpanda)",
-      "Automated fuzz testing & formal verification of critical business flow paths",
-      "Memory-safe execution architectures in Rust"
+      "Memory-safe execution architectures in Rust & type-safe TypeScript"
     ]
   },
   {
     id: "hardware",
-    title: "Embedded Systems Architecture",
+    title: "Embedded & IoT Systems Architecture",
     category: "HARDWARE",
-    description: "Low-latency firmware and hardware integration for IoT, robotics, and industrial automation control systems.",
-    details: "Our hardware engineering team bridges the gap between physical elements and digital networks. We design and manufacture highly reliable, low-power PCBs, and develop custom bare-metal and RTOS-based firmware that runs safely under extreme conditions.",
+    description: "Low-latency firmware, real-time operating systems (RTOS), and interconnected IoT hardware arrays.",
+    details: "Our hardware engineering team bridges the gap between physical elements and digital networks. We design and manufacture highly reliable, low-power PCBs, and develop custom bare-metal and RTOS-based firmware that runs safely under extreme conditions, connecting physical sensors to secure enterprise IoT cloud management hubs.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     seoAlt: "Microchip on an advanced green printed circuit board with glowing copper traces and miniature electronic components illustrating high-integrity Embedded Systems Architecture.",
-    seoTitle: "Emerald Codelines Embedded Hardware Engineering and RTOS Firmware Development",
-    bullets: ["RTOS Development", "FPGA & PCB Design"],
+    seoTitle: "Emerald Codelines Embedded Hardware Engineering and IoT Systems Development",
+    bullets: ["RTOS Development", "IoT Fleet & PCB Design"],
     features: [
       "Bare-metal low-overhead drivers & hardware abstraction layers (HAL)",
       "Real-time preemptive scheduling via FreeRTOS / Zephyr RTOS",
-      "Multi-layer PCB layout, signal integrity routing, and hardware verification",
-      "Low-power optimization for battery-constrained environmental nodes"
+      "Secure over-the-air (OTA) update frameworks for distributed IoT fleets",
+      "Multi-layer PCB layout, signal integrity routing, and low-power circuit optimization"
     ]
   },
   {
     id: "intelligence",
-    title: "AI Agent Automation",
+    title: "Autonomous Systems & AI Agents",
     category: "INTELLIGENCE",
-    description: "Next-gen autonomous agents that integrate into your existing workflow to handle complex decision-making tasks.",
-    details: "We deploy state-of-the-art autonomous agents powered by fine-tuned LLMs and local vision systems. These agents operate within secure environments to automate complex analytical pipelines, process real-time audio/visual streams, and control physical robotic hardware safely.",
+    description: "Next-gen self-governing controllers, custom vision pilots, and LLM-powered workflow automation.",
+    details: "We deploy state-of-the-art autonomous agents powered by fine-tuned LLMs and local vision systems. These agents operate within secure environments to automate complex analytical pipelines, control self-healing industrial system loops, and navigate custom robotic hardware safely using edge-quantized vision pilots.",
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
     seoAlt: "An abstract networking mesh with glowing green and silver nodes representing neural networks and automated AI Agents coordinating complex decisions.",
-    seoTitle: "Emerald Codelines Autonomous AI Agents and LLM-Powered Workflow Automation",
-    bullets: ["LLM Fine-tuning", "Vision & Audio Intelligence"],
+    seoTitle: "Emerald Codelines Autonomous Systems and LLM-Powered Workflow Automation",
+    bullets: ["Autonomous Process Loops", "Edge-Based Vision Autopilots"],
     features: [
       "Domain-specific model fine-tuning with custom LoRA adapters",
-      "Secure on-premise model execution setups & API sandboxes",
-      "Edge-based computer vision for assembly line flaw detection",
-      "Multi-agent task distribution and self-healing workflow orchestrators"
+      "Edge-based computer vision for automated robotics & defect detection",
+      "Self-governing, self-healing system loop controllers and orchestrators",
+      "Secure on-premise model execution setups & API sandboxes"
     ]
   }
 ];

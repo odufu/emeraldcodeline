@@ -11,9 +11,9 @@ interface ChatMessage {
 const SYSTEM_INSTRUCTION = `You are the Emerald Codelines Interactive Assistant, an elegant, highly knowledgeable, and deeply professional engineering representative.
 Your purpose is to answer user questions about Emerald Codelines, our high-integrity engineering practices, and our core capabilities:
 
-1. Custom Software Development: High-performance cloud-native microservices and real-time pipelines built on languages like Rust and Python.
-2. Embedded Systems Architecture: Low-latency firmware, RTOS, and custom hardware/PCB design.
-3. AI Agent Automation: Production-ready LLM fine-tuning and computer vision pipelines.
+1. Custom Software & Mobile App Development: High-performance cloud-native microservices, real-time pipelines, and premium iOS & Android mobile apps (React Native, Flutter) built with Rust, Go, Python, and TypeScript.
+2. Embedded & IoT Systems Architecture: Low-latency firmware, preemptive RTOS scheduler algorithms, custom PCB/hardware circuits, and secure over-the-air (OTA) updates for distributed IoT fleets.
+3. Autonomous Systems & AI Agents: Production-ready LLM agents, local edge vision pilots, defect-detection models, and self-healing process loop orchestrators.
 4. Capacity Building: Custom engineering workshops for enterprises to upskill their teams.
 
 Tone guidelines:
@@ -25,14 +25,14 @@ Tone guidelines:
 const getOfflineResponse = (query: string): string => {
   const q = query.toLowerCase();
   
-  if (q.includes("software") || q.includes("custom") || q.includes("rust") || q.includes("go") || q.includes("python") || q.includes("backend") || q.includes("cloud")) {
-    return "Our Custom Software Development capability focuses on architecting high-performance cloud-native microservices and real-time data pipelines. We primarily develop in Rust and Python for memory safety, concurrency, and minimal memory footprint. We also build custom event-driven architectures with Apache Kafka or Redpanda.";
+  if (q.includes("software") || q.includes("custom") || q.includes("rust") || q.includes("go") || q.includes("python") || q.includes("backend") || q.includes("cloud") || q.includes("mobile") || q.includes("app") || q.includes("ios") || q.includes("android") || q.includes("flutter") || q.includes("react native")) {
+    return "Our Custom Software & Mobile App Development capability focuses on building high-performance cross-platform mobile apps (using Flutter and React Native) with seamless offline synchronization, alongside scalable cloud-native microservices and real-time Kafka/Redpanda data pipelines. We build using memory-safe languages like Rust and type-safe systems like TypeScript.";
   }
-  if (q.includes("embedded") || q.includes("firmware") || q.includes("rtos") || q.includes("freertos") || q.includes("pcb") || q.includes("hardware") || q.includes("iot") || q.includes("robotics")) {
-    return "Our Embedded Systems Architecture team specializes in low-latency firmware design, real-time operating systems (RTOS) like FreeRTOS, and custom PCB engineering. We build safety-critical automation, IoT nodes, and hardware integrations with fully deterministic execution characteristics.";
+  if (q.includes("embedded") || q.includes("firmware") || q.includes("rtos") || q.includes("freertos") || q.includes("pcb") || q.includes("hardware") || q.includes("iot") || q.includes("sensor")) {
+    return "Our Embedded & IoT Systems Architecture team specializes in low-latency firmware design, real-time operating systems (RTOS) like FreeRTOS/Zephyr, and custom PCB engineering. We build safety-critical automation, connected IoT sensor nodes, and hardware arrays with secure over-the-air (OTA) update support and low-power circuit optimization.";
   }
-  if (q.includes("ai") || q.includes("agent") || q.includes("llm") || q.includes("fine-tune") || q.includes("automation") || q.includes("vision") || q.includes("gpt")) {
-    return "Our AI Agent Automation offerings focus on productionizing autonomous LLM agents (fine-tuning, tool calling, RAG) and real-time computer vision pipelines. We help enterprises automate complex workflows using domain-specific open models deployed locally or in high-availability cloud setups.";
+  if (q.includes("ai") || q.includes("agent") || q.includes("llm") || q.includes("fine-tune") || q.includes("automation") || q.includes("vision") || q.includes("gpt") || q.includes("autonomous") || q.includes("robot") || q.includes("loop")) {
+    return "Our Autonomous Systems & AI Agents capability focuses on deploying production-ready LLM agents (fine-tuning, RAG, agent workflows), edge-based computer vision for automated robotics/assembly detection, and self-governing/self-healing system loop controllers deployed securely.";
   }
   if (q.includes("training") || q.includes("workshop") || q.includes("upskill") || q.includes("capacity") || q.includes("learn") || q.includes("course")) {
     return "Our Capacity Building service offers standard and customized technical workshops for corporate engineering teams. Modules include Advanced Rust Systems Programming, FreeRTOS Firmware Architecture, and LLM Agent deployment. They feature hands-on labs and are taught by veteran systems engineers.";
@@ -53,7 +53,7 @@ const getOfflineResponse = (query: string): string => {
     return "Greetings. I am the Emerald Codelines Interactive Representative. How may I assist you with our systems engineering, firmware architecture, or enterprise training programs today?";
   }
   
-  return "I am currently running in offline demonstration mode. Emerald Codelines provides high-availability services including Rust software development, embedded RTOS systems, AI automation, and training. For live AI responses, click the Settings (gear) icon in the chat header and enter a Gemini API Key! How else can I help you today?";
+  return "I am currently running in offline demonstration mode. Emerald Codelines provides high-availability services including Rust software development, cross-platform mobile apps, embedded IoT systems, autonomous edge agents, and enterprise workshops. For live AI responses, click the Settings (gear) icon in the chat header and enter a Gemini API Key! How else can I help you today?";
 };
 
 export default function ChatAssistant() {

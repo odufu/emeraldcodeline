@@ -11,38 +11,38 @@ interface Symptom {
 const DOMAINS = [
   {
     id: "cloud",
-    title: "Cloud & Microservices",
+    title: "Software & Mobile Apps",
     icon: Database,
-    description: "High-throughput cloud architectures, database structures, and streaming pipelines.",
+    description: "Cloud-native microservices, data streaming pipelines, and premium mobile app architectures.",
     symptoms: [
       { id: "c1", label: "System latency spikes under peak concurrency load", weight: 15 },
-      { id: "c2", label: "High cloud infrastructure costs & inefficient scaling", weight: 10 },
+      { id: "c2", label: "Slow cross-platform mobile sync or sluggish app UI rendering", weight: 10 },
       { id: "c3", label: "Frequent memory leaks or concurrency deadlocks", weight: 15 },
       { id: "c4", label: "Database bottlenecks & slow-running complex queries", weight: 10 }
     ]
   },
   {
     id: "embedded",
-    title: "Embedded & RTOS",
+    title: "Embedded & IoT Systems",
     icon: Cpu,
-    description: "Low-latency firmware, real-time operating systems, and custom PCB circuits.",
+    description: "Low-latency firmware, real-time operating systems (RTOS), and interconnected IoT hardware fleets.",
     symptoms: [
       { id: "e1", label: "Intermittent, hard-to-reproduce firmware crashes in production", weight: 20 },
       { id: "e2", label: "Non-deterministic task execution or race conditions", weight: 15 },
-      { id: "e3", label: "High power consumption or inefficient sensor polling", weight: 10 },
-      { id: "e4", label: "Lack of clean safety audits / ISO regulatory readiness", weight: 10 }
+      { id: "e3", label: "High power consumption or inefficient sensor polling in edge devices", weight: 10 },
+      { id: "e4", label: "Unsecured over-the-air (OTA) updates or regulatory vulnerabilities", weight: 10 }
     ]
   },
   {
     id: "ai",
-    title: "AI & LLM Automation",
+    title: "Autonomous Systems & AI",
     icon: BrainCircuit,
-    description: "Autonomous agents, vLLM inference optimization, and computer vision.",
+    description: "Autonomous agents, computer vision pipelines, and self-governing process loop orchestrators.",
     symptoms: [
       { id: "a1", label: "AI agent loops infinitely or fails to use tools reliably", weight: 15 },
       { id: "a2", label: "Excessive token costs or slow API response latencies", weight: 10 },
       { id: "a3", label: "Frequent hallucinations or data safety concerns", weight: 15 },
-      { id: "a4", label: "Difficulties integrating vision models into local edge devices", weight: 10 }
+      { id: "a4", label: "Difficulties integrating vision pilots into local edge robotics/controllers", weight: 10 }
     ]
   }
 ];
@@ -75,7 +75,7 @@ export default function DiagnosticTool({ onOpenBooking }: { onOpenBooking: () =>
     const recommendations: string[] = [];
     if (selectedDomainId === "cloud") {
       if (selectedSymptoms.includes("c1")) recommendations.push("Introduce highly concurrent Rust microservices for performance-critical path bottlenecks.");
-      if (selectedSymptoms.includes("c2")) recommendations.push("Audit Docker deployment parameters and implement light memory footprints.");
+      if (selectedSymptoms.includes("c2")) recommendations.push("Introduce state-slice query caching and optimize React Native/Flutter UI re-renders.");
       if (selectedSymptoms.includes("c3")) recommendations.push("Deploy advanced thread-safety fuzzing and static code analyzers.");
       if (selectedSymptoms.includes("c4")) recommendations.push("Introduce Redis caching layers and partition database indexes.");
       if (recommendations.length === 0) recommendations.push("Your systems look solid! Maintain regular architectural review schedules.");
@@ -83,7 +83,7 @@ export default function DiagnosticTool({ onOpenBooking }: { onOpenBooking: () =>
       if (selectedSymptoms.includes("e1")) recommendations.push("Verify thread boundaries and utilize stack overflow safety hooks.");
       if (selectedSymptoms.includes("e2")) recommendations.push("Migrate critical sections to a preemptive priority RTOS scheduling architecture.");
       if (selectedSymptoms.includes("e3")) recommendations.push("Optimize low-power sleep states and transition to interrupt-driven polling.");
-      if (selectedSymptoms.includes("e4")) recommendations.push("Run formal lint tools and set up standard MISRA-C static checking.");
+      if (selectedSymptoms.includes("e4")) recommendations.push("Integrate cryptographic signatures for firmware bundles and audit OTA fleet compliance.");
       if (recommendations.length === 0) recommendations.push("Your firmware is highly deterministic. Keep up the high code hygiene!");
     } else {
       if (selectedSymptoms.includes("a1")) recommendations.push("Implement strict JSON schemas and tool call confirmation retry structures.");
